@@ -116,44 +116,6 @@ import java.util.HashMap;
 
 /************** usinging HashMap If multiple unique String present *****************/
 
-// class Find_The_unique_Element {
-
-//     public static void uniqueEle(String str){
-
-//         HashMap<Character, Integer> map= new HashMap<>();
-
-//         for(int i = 0; i< str.length(); i++ ){
-
-//             char ch = str.charAt(i);
-
-//             if(map.containsKey(ch)){
-//                 map.put(ch, map.get(ch)+1);
-//             }
-//             else{
-//                 map.put(ch, 1);
-//             }
-//         }
-
-//         for(int i = 0; i< str.length(); i++){
-
-//             char ch = str.charAt(i);
-
-//             if(map.get(ch) == 1){
-//                 System.out.print(ch+", ");
-//             }
-//         }
-//     }
-
-
-//     public static void main(String args[]) {
-//         String str = "dadalm";
-//         uniqueEle(str);
-//     }
-// }
-
-/************** usinging HashMap If multiple unique String present *****************/
-
-
 class Find_The_unique_Element {
 
     public static void uniqueEle(String str){
@@ -165,7 +127,7 @@ class Find_The_unique_Element {
             char ch = str.charAt(i);
 
             if(map.containsKey(ch)){
-                map.put(ch, map.get(ch)+1);
+                map.put(ch, map.get(ch)+1); // map.get(ch) one char appear How many time 
             }
             else{
                 map.put(ch, 1);
@@ -188,3 +150,4 @@ class Find_The_unique_Element {
         uniqueEle(str);
     }
 }
+
